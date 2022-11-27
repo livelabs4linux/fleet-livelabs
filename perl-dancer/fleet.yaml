@@ -1,2 +1,8 @@
 ---
 namespace: livelabs
+targetCustomizations:
+
+- name: cluster2-gke
+  clusterSelector:
+    matchLabels:
+      env: homolog
