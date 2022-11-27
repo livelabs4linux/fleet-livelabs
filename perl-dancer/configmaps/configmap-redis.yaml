@@ -1,2 +1,10 @@
-NAME    DATA   AGE
-redis   1      27h
+apiVersion: v1
+data:
+  redis_disable_commands: FLUSHDB,FLUSHALL
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-11-25T20:09:47Z"
+  name: redis
+  namespace: livelabs
+  resourceVersion: "960119"
+  uid: 7e3904f0-f727-43fe-b055-7cffcaaf5690

@@ -26,5 +26,3 @@ spec:
     app: perl
   sessionAffinity: None
   type: NodePort
-status:
-  loadBalancer: {}
