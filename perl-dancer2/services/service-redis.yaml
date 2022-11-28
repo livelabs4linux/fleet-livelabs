@@ -4,9 +4,6 @@ metadata:
   name: redis
   namespace: gitops
 spec:
-  clusterIP: 10.84.11.138
-  clusterIPs:
-  - 10.84.11.138
   ipFamilies:
   - IPv4
   ipFamilyPolicy: SingleStack
