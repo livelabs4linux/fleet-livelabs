@@ -6,9 +6,6 @@ metadata:
   name: perl-dancer
   namespace: gitops
 spec:
-  clusterIP: 10.84.8.119
-  clusterIPs:
-  - 10.84.8.119
   externalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
