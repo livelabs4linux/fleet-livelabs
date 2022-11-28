@@ -41,3 +41,18 @@ spec:
         image: docker.io/bitnami/redis:7.0
         imagePullPolicy: Always
         name: container-0
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /bitnami/redis/data
+          name: redis-disk
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: redis-disk
+        persistentVolumeClaim:
+          claimName: redis-disk
