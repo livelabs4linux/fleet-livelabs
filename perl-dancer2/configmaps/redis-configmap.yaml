@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  redis_disable_commands: FLUSHDB,FLUSHALL
+kind: ConfigMap
+metadata:
+  name: redis
+  namespace: gitops
