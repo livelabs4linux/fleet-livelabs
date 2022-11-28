@@ -1,18 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2022-11-25T20:14:21Z"
   name: redis
   namespace: livelabs
-  resourceVersion: "963112"
-  uid: 78922668-7205-415a-9541-c29837e12279
 spec:
-  clusterIP: 10.84.11.138
-  clusterIPs:
-  - 10.84.11.138
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
   ports:
   - name: redis-port
     port: 6379
@@ -20,5 +11,4 @@ spec:
     targetPort: 6379
   selector:
     app: redis
-  sessionAffinity: None
   type: ClusterIP
